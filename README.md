@@ -7,6 +7,8 @@
 
 ## Демо-доступы
 
+Приложение: https://yaon1.github.io/kostrov-crm/
+
 | Роль | Email | Пароль |
 |---|---|---|
 | Постановщик | manager@example.com | Demo-2026! |
