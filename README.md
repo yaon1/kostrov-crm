@@ -45,7 +45,7 @@ npm run dev                 # http://127.0.0.1:5173
 4. Демо-данные: выполнить `supabase/seed.sql` в SQL Editor.
    Свои пользователи — Authentication → Users → Add user; роль постановщика:
    `update public.profiles set role = 'manager' where id = '<user id>';`
-5. Фронтенд: Vercel / Netlify, сборка `npm run build`, каталог `dist`, переменные `VITE_SUPABASE_URL` и `VITE_SUPABASE_ANON_KEY`. Для SPA-маршрутов в Vercel лежит `vercel.json`.
+5. Фронтенд: демо собирается и выкладывается на GitHub Pages workflow-ом `.github/workflows/pages.yml` (переменные репозитория `VITE_SUPABASE_URL` и `VITE_SUPABASE_ANON_KEY`). Подойдут и Vercel / Netlify: сборка `npm run build`, каталог `dist`, те же переменные; для SPA-маршрутов в Vercel лежит `vercel.json`.
 
 Во фронтенд попадает только публичный anon-ключ. Ключ `service_role` нигде в проекте не используется; `.env` в `.gitignore`.
 

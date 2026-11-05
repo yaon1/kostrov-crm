@@ -2,6 +2,8 @@ import react from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
+  // GitHub Pages отдаёт приложение из /<repo>/ — base задаётся в CI через VITE_BASE.
+  base: process.env.VITE_BASE || '/',
   plugins: [react()],
   build: {
     rolldownOptions: {
